@@ -1,0 +1,6 @@
+{
+  "status": 500,
+  "message": "Error while fetching pokedex: For input string: \"regularUser\"",
+  "timestamp": "2024-06-02T02:05:25.908338500",
+  "IP:": "127.0.0.1"
+}

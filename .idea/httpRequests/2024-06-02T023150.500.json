@@ -1,0 +1,6 @@
+{
+  "status": 500,
+  "message": "Cannot construct instance of `org.example.dtos.PokedexDTO` (no Creators, like default constructor, exist): cannot deserialize from Object value (no delegate- or property-based Creator)\n at [Source: (String)\"{\n  \"pokemon\": [\n    {\n      \"dexNumber\": \"0001\",\n      \"name\": \"Bulbasaur\",\n      \"dexEntry\": \"A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON\",\n      \"hp\": 45,\n      \"atk\": 49,\n      \"def\": 49,\n      \"spatk\": 65,\n      \"spdef\": 65,\n      \"spd\": 45,\n      \"gender\": \"MALE\",\n      \"height\": \"0.7m\",\n      \"weight\": \"6.9kg\",\n      \"spriteUrl\": \"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png\",\n      \"shinySpriteUrl\": \"htt\"[truncated 1266 chars]; line: 2, column: 3]",
+  "timestamp": "2024-06-02T02:31:50.845395700",
+  "IP:": "127.0.0.1"
+}

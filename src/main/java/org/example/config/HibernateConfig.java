@@ -3,6 +3,9 @@ import jakarta.persistence.EntityManagerFactory;
 import lombok.NoArgsConstructor;
 import org.example.model.Role;
 import org.example.model.User;
+import org.example.persistence.Move;
+import org.example.persistence.Pokedex;
+import org.example.persistence.Pokemon;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -57,6 +60,9 @@ public class HibernateConfig {
     private static void getAnnotationConfiguration(Configuration configuration) {
         configuration.addAnnotatedClass(User.class);
         configuration.addAnnotatedClass(Role.class);
+        configuration.addAnnotatedClass(Pokedex.class);
+        configuration.addAnnotatedClass(Pokemon.class);
+        configuration.addAnnotatedClass(Move.class);
 
 
     }

@@ -1,6 +1,7 @@
 package org.example.daos;
 
 import jakarta.persistence.EntityNotFoundException;
+import org.example.dtos.UserDTO;
 import org.example.exceptions.ValidationException;
 import org.example.model.Role;
 import org.example.model.User;
@@ -22,10 +23,8 @@ public class SecurityDao extends DAO<User, String> {
         return instance;
     }
 
-    public User createUser(String username, String password){
-        User user = new User();
-        user.setUsername(username);
-        user.setPassword(password);
+    public User createUser(UserDTO userDTO){
+        User user = new User(userDTO.getUsername(), userDTO.getPassword(), userDTO.getEmail());
         try(var em = emf.createEntityManager()){
             Role role = em.find(Role.class, "USER");
             if(role == null){
@@ -43,7 +42,7 @@ public class SecurityDao extends DAO<User, String> {
 
     public User getVerifiedUser(String username, String password) throws ValidationException {
         try(var em = emf.createEntityManager()){
-            List<User> users = em.createQuery("select u from users u", User.class).getResultList();
+            List<User> users = em.createQuery("select u from User u", User.class).getResultList();
             users.stream().forEach(user -> System.out.println(user.getUsername()+" "+user.getPassword()));
             User user = em.find(User.class, username);
             if(user == null){

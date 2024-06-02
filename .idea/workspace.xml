@@ -5,10 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e140786-c7a7-41ff-b576-960fd2302bb2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/PokedexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/PokemonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/PokedexDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/PokemonDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dtos/MoveDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dtos/PokedexDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dtos/PokemonDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/MoveType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/persistence/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/persistence/Pokedex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/persistence/Pokemon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/Populator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exceptionLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/exceptionLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/HibernateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/Routes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/Routes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controllers/SecurityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controllers/SecurityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/daos/SecurityDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/daos/SecurityDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dev.http" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dev.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dtos/TokenDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dtos/TokenDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dtos/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dtos/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/TokenUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/TokenUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/utils/Updater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/Updater.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +43,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -86,7 +111,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="HTTP Request.dev | #4">
     <configuration name="dev | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/main/java/org/example/dev.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -104,10 +129,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.dev | #3" />
-        <item itemvalue="HTTP Request.dev | #2" />
-        <item itemvalue="HTTP Request.dev | #1" />
         <item itemvalue="HTTP Request.dev | #4" />
+        <item itemvalue="HTTP Request.dev | #2" />
+        <item itemvalue="HTTP Request.dev | #3" />
+        <item itemvalue="HTTP Request.dev | #1" />
         <item itemvalue="HTTP Request.dev | #5" />
       </list>
     </recent_temporary>
@@ -136,7 +161,7 @@
       <workItem from="1712672416416" duration="42000" />
       <workItem from="1712826528985" duration="14842000" />
       <workItem from="1717276128089" duration="913000" />
-      <workItem from="1717277457355" duration="108000" />
+      <workItem from="1717277457355" duration="12828000" />
     </task>
     <servers />
   </component>

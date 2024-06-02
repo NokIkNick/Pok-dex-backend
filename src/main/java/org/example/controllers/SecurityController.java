@@ -37,11 +37,11 @@ public class SecurityController {
             ObjectNode returnObject = objectMapper.createObjectNode();
             try{
                 UserDTO userInput = ctx.bodyAsClass(UserDTO.class);
-                User created = securityDao.createUser(userInput.getUsername(), userInput.getPassword());
+                User created = securityDao.createUser(userInput);
 
 
                 String token = tokenUtils.createToken(new UserDTO(created));
-                ctx.status(HttpStatus.CREATED).json(new TokenDTO(token, userInput.getUsername()));
+                ctx.status(HttpStatus.CREATED).json(new TokenDTO(token, userInput.getUsername(), userInput.getEmail(), created.rolesToString()));
             }catch(EntityExistsException | ApiException e){
                 ctx.status(HttpStatus.UNPROCESSABLE_CONTENT);
                 ctx.json(returnObject.put("msg", "User already exists"));
@@ -58,7 +58,7 @@ public class SecurityController {
 
                 User verifiedUserEntity = securityDao.getVerifiedUser(user.getUsername(), user.getPassword());
                 String token = tokenUtils.createToken(new UserDTO(verifiedUserEntity));
-                ctx.status(200).json(new TokenDTO(token, user.getUsername()));
+                ctx.status(200).json(new TokenDTO(token, user.getUsername(), verifiedUserEntity.getEmail(), verifiedUserEntity.rolesToString()));
 
             }catch(EntityNotFoundException | ValidationException | ApiException e){
                 ctx.status(401);

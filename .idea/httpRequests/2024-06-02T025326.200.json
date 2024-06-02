@@ -1,0 +1,6 @@
+{
+  "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyZWd1bGFyVXNlciIsInJvbGVzIjoiVVNFUiIsImlzcyI6Ik5pY2tsYXMgVy4iLCJleHAiOjE3MTcyOTE0MDYsImVtYWlsIjoicmVndWxhclVzZXJAZW1haWwuY29tIiwidXNlcm5hbWUiOiJyZWd1bGFyVXNlciJ9.XXe7h4kmTqhvO2SQ-00sZVNUy4cCAfrpcs7p4DRaXxM",
+  "username": "regularUser",
+  "email": "regularUser@email.com",
+  "roles": "USER"
+}

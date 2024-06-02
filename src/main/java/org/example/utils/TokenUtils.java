@@ -22,11 +22,12 @@ public class TokenUtils {
         SignedJWT jwt = SignedJWT.parse(token);
         String roles = jwt.getJWTClaimsSet().getClaim("roles").toString();
         String username = jwt.getJWTClaimsSet().getClaim("username").toString();
+        String email = jwt.getJWTClaimsSet().getClaim("email").toString();
 
         Set<String> rolesSet = Arrays
                 .stream(roles.split(","))
                 .collect(Collectors.toSet());
-        return new UserDTO(username, rolesSet);
+        return new UserDTO(username, rolesSet, email);
     }
     public boolean tokenIsValid(String token, String secret) throws ParseException, JOSEException, NotAuthorizedException {
         SignedJWT jwt = SignedJWT.parse(token);
@@ -55,6 +56,7 @@ public class TokenUtils {
                     .issuer(ISSUER)
                     .claim("username", user.getUsername())
                     .claim("roles", user.getRoles().stream().reduce((s1, s2) -> s1 + "," + s2).get())
+                    .claim("email", user.getEmail())
                     .expirationTime(new Date(new Date().getTime() + Integer.parseInt(TOKEN_EXPIRE_TIME)))
                     .build();
             Payload payload = new Payload(claimsSet.toJSONObject());

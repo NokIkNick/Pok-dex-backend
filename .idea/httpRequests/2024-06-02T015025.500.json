@@ -1,0 +1,6 @@
+{
+  "status": 500,
+  "message": "org.hibernate.query.sqm.UnknownEntityException: Could not resolve root entity 'users'",
+  "timestamp": "2024-06-02T01:50:25.037446400",
+  "IP:": "127.0.0.1"
+}

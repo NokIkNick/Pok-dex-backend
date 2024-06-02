@@ -1,0 +1,36 @@
+{
+  "id": 0,
+  "pokemon": [
+    {
+      "dexNumber": "0001",
+      "name": "Bulbasaur",
+      "dexEntry": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON",
+      "hp": 45,
+      "atk": 49,
+      "def": 49,
+      "spatk": 65,
+      "spdef": 65,
+      "spd": 45,
+      "gender": "MALE",
+      "height": "0.7m",
+      "weight": "6.9kg",
+      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "shinySpriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png",
+      "typeOne": "GRASS",
+      "typeTwo": "POISON",
+      "moves": [
+        {
+          "id": 0,
+          "name": "Tackle",
+          "power": 40,
+          "pp": 35,
+          "accuracy": 100,
+          "type": "NORMAL",
+          "moveType": "PHYSICAL"
+        }
+      ],
+      "id": "0001",
+      "shiny": false
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "status": 500,
+  "message": "ids for this class must be manually assigned before calling save(): org.example.model.User",
+  "timestamp": "2024-06-02T01:44:53.450070900",
+  "IP:": "127.0.0.1"
+}

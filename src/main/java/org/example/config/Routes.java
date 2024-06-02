@@ -4,6 +4,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.javalin.apibuilder.EndpointGroup;
 import io.javalin.security.RouteRole;
 import jakarta.persistence.EntityManagerFactory;
+import org.example.controllers.PokedexController;
+import org.example.controllers.PokemonController;
 import org.example.controllers.SecurityController;
 import org.example.controllers.TestController;
 import org.example.daos.TestMemoryDao;
@@ -12,11 +14,15 @@ import static io.javalin.apibuilder.ApiBuilder.*;
 
 public class Routes {
     private static SecurityController sc;
+    private static PokedexController pdc;
+    private static PokemonController pc;
     private static final ObjectMapper objectMapper = new ObjectMapper();
     private static TestController tc;
 
     public static EndpointGroup getRoutes(boolean isTesting){
         sc = SecurityController.getInstance(isTesting);
+        pdc = PokedexController.getInstance(isTesting);
+        pc = PokemonController.getInstance(isTesting);
         return () -> {
             path("/", () -> {
                 get("/", ctx -> ctx.json(objectMapper.createObjectNode().put("Message", "Connected Successfully")), roles.ANYONE);
@@ -27,8 +33,8 @@ public class Routes {
             });
             path("/protected", () -> {
                 before(sc.authenticate());
-                get("/user_demo", ctx-> ctx.json(objectMapper.createObjectNode()), roles.USER);
-                get("/admin_demo", ctx-> ctx.json(objectMapper.createObjectNode()), roles.ADMIN);
+                get("/getPokedexByUserId/{id}", pdc.getPokedexByUserId(), roles.USER);
+                put("/updatePokedexById/{id}", pdc.updatePokedexById(), roles.USER);
             });
         };
     }

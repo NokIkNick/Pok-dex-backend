@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.example.persistence.Pokedex;
 import org.mindrot.jbcrypt.BCrypt;
 
 import java.util.HashSet;
@@ -29,6 +30,10 @@ public class User {
             @JoinColumn(name = "role_name",referencedColumnName = "name")})
     @ManyToMany(fetch = FetchType.EAGER)
     private Set<Role> roles = new HashSet<>();
+
+    @OneToOne
+    @JoinColumn(name ="pokedex_id", referencedColumnName = "id")
+    private Pokedex pokedex;
 
     public User(String username,String password, String email){
         this.Username=username;

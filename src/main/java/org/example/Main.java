@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.config.ApplicationConfig;
 import org.example.config.Routes;
+import org.example.utils.Populator;
 
 
 public class Main {
@@ -14,5 +15,6 @@ public class Main {
                 .setRoutes(Routes.getRoutes(isTesting))
                 .checkSecurityRoles(isTesting)
                 .configureCors();
+        //Populator.populate(isTesting);
     }
 }
