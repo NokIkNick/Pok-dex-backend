@@ -20,6 +20,7 @@ public class MoveDTO{
 
     private int id;
     private String name;
+    private String description;
     private int power;
     private int pp;
     private int accuracy;
@@ -29,6 +30,7 @@ public class MoveDTO{
     public MoveDTO(Move move){
         this.id = move.getId();
         this.name = move.getName();
+        this.description = move.getDescription();
         this.power = move.getPower();
         this.pp = move.getPp();
         this.accuracy = move.getAccuracy();

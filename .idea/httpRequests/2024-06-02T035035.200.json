@@ -1,0 +1,45 @@
+{
+  "id": 0,
+  "pokemon": [
+    {
+      "dex_number": "0002",
+      "name": "Ivysaur",
+      "dexEntry": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+      "hp": 60,
+      "atk": 62,
+      "def": 63,
+      "spatk": 80,
+      "spdef": 80,
+      "spd": 60,
+      "gender": null,
+      "height": null,
+      "weight": null,
+      "spriteUrl": null,
+      "shinySpriteUrl": null,
+      "typeOne": null,
+      "typeTwo": null,
+      "moves": [],
+      "shiny": false
+    },
+    {
+      "dex_number": "0001",
+      "name": "Bulbasaur",
+      "dexEntry": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON",
+      "hp": 45,
+      "atk": 49,
+      "def": 49,
+      "spatk": 65,
+      "spdef": 65,
+      "spd": 45,
+      "gender": null,
+      "height": null,
+      "weight": null,
+      "spriteUrl": null,
+      "shinySpriteUrl": null,
+      "typeOne": null,
+      "typeTwo": null,
+      "moves": [],
+      "shiny": false
+    }
+  ]
+}

@@ -167,3 +167,33 @@ message: Error accessing field [private java.lang.String org.example.persistence
 timestamp: 2024-06-02T02:57:55.949900700
 IP:: 127.0.0.1
 ----------------------------------------------------------------------------------
+status: 500
+message: Error accessing field [private java.lang.String org.example.persistence.Pokemon.dex_number] by reflection for persistent property [org.example.persistence.Pokemon#dex_number] : org.example.dtos.PokemonDTO@79d66732
+timestamp: 2024-06-02T03:34:35.555390800
+IP:: 127.0.0.1
+----------------------------------------------------------------------------------
+status: 500
+message: Error accessing field [private java.lang.String org.example.persistence.Pokemon.dex_number] by reflection for persistent property [org.example.persistence.Pokemon#dex_number] : org.example.dtos.PokemonDTO@3a51f750
+timestamp: 2024-06-02T03:40:43.529166700
+IP:: 127.0.0.1
+----------------------------------------------------------------------------------
+status: 500
+message: Error accessing field [private java.lang.String org.example.persistence.Pokemon.dex_number] by reflection for persistent property [org.example.persistence.Pokemon#dex_number] : org.example.dtos.PokemonDTO@75a43c79
+timestamp: 2024-06-02T03:44:27.208677900
+IP:: 127.0.0.1
+----------------------------------------------------------------------------------
+status: 500
+message: Multiple representations of the same entity [org.example.persistence.Move#0] are being merged. Detached: [org.example.persistence.Move@665803ec]; Detached: [org.example.persistence.Move@3fc327]
+timestamp: 2024-06-02T03:54:04.807907200
+IP:: 127.0.0.1
+----------------------------------------------------------------------------------
+status: 500
+message: org.example.exceptions.ApiException: Unauthorized. Could not verify token, 401
+timestamp: 2024-06-02T03:56:31.872667200
+IP:: 127.0.0.1
+----------------------------------------------------------------------------------
+status: 500
+message: org.example.exceptions.ApiException: Unauthorized. Could not verify token, 401
+timestamp: 2024-06-02T04:09:27.687078200
+IP:: 127.0.0.1
+----------------------------------------------------------------------------------

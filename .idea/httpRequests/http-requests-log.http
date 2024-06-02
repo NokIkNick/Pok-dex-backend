@@ -1,3 +1,537 @@
+GET http://localhost:7070/api/protected/getPokedexByUserId/regularUser
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyZWd1bGFyVXNlciIsInJvbGVzIjoiVVNFUiIsImlzcyI6Ik5pY2tsYXMgVy4iLCJleHAiOjE3MTcyOTU5NzEsImVtYWlsIjoicmVndWxhclVzZXJAZW1haWwuY29tIiwidXNlcm5hbWUiOiJyZWd1bGFyVXNlciJ9.8OzYwjUDptgDx-VaNBaPZr_z7n6bek7Nmx8XBt_mbt0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-06-02T040941.200.json
+
+###
+
+POST http://localhost:7070/api/auth/login
+Content-Length: 47
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"username":"regularUser",
+"password":"1234"
+}
+
+<> 2024-06-02T040931.200.json
+
+###
+
+GET http://localhost:7070/api/protected/getPokedexByUserId/regularUser
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyZWd1bGFyVXNlciIsInJvbGVzIjoiVVNFUiIsImlzcyI6Ik5pY2tsYXMgVy4iLCJleHAiOjE3MTcyOTM4NjIsImVtYWlsIjoicmVndWxhclVzZXJAZW1haWwuY29tIiwidXNlcm5hbWUiOiJyZWd1bGFyVXNlciJ9.YQGTDJ_p1MSxfn39J_8hpnlIA5WYimwt-ZxiBrVoQaQ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-06-02T040927.500.json
+
+###
+
+GET http://localhost:7070/api/protected/getPokedexByUserId/regularUser
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyZWd1bGFyVXNlciIsInJvbGVzIjoiVVNFUiIsImlzcyI6Ik5pY2tsYXMgVy4iLCJleHAiOjE3MTcyOTM4NjIsImVtYWlsIjoicmVndWxhclVzZXJAZW1haWwuY29tIiwidXNlcm5hbWUiOiJyZWd1bGFyVXNlciJ9.YQGTDJ_p1MSxfn39J_8hpnlIA5WYimwt-ZxiBrVoQaQ
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-06-02T035642.200.json
+
+###
+
+GET http://localhost:7070/api/protected/getPokedexByUserId/regularUser
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyZWd1bGFyVXNlciIsInJvbGVzIjoiVVNFUiIsImlzcyI6Ik5pY2tsYXMgVy4iLCJleHAiOjE3MTcyODgzNjAsImVtYWlsIjoicmVndWxhclVzZXJAZW1haWwuY29tIiwidXNlcm5hbWUiOiJyZWd1bGFyVXNlciJ9.QCVT5HSQwoSljrnSFGd_fv98ernkDZpAputYTRrpIeE
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-06-02T035631.500.json
+
+###
+
+PUT http://localhost:7070/api/protected/updatePokedexById/0
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyZWd1bGFyVXNlciIsInJvbGVzIjoiVVNFUiIsImlzcyI6Ik5pY2tsYXMgVy4iLCJleHAiOjE3MTcyOTM4NjIsImVtYWlsIjoicmVndWxhclVzZXJAZW1haWwuY29tIiwidXNlcm5hbWUiOiJyZWd1bGFyVXNlciJ9.YQGTDJ_p1MSxfn39J_8hpnlIA5WYimwt-ZxiBrVoQaQ
+Content-Type: application/json
+Content-Length: 1769
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "pokemon": [
+    {
+      "dex_number": "0001",
+      "name": "Bulbasaur",
+      "dexEntry": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON",
+      "hp": 45,
+      "atk": 49,
+      "def": 49,
+      "spatk": 65,
+      "spdef": 65,
+      "spd": 45,
+      "gender": "MALE",
+      "height": "0.7m",
+      "weight": "6.9kg",
+      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "shinySpriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png",
+      "typeOne": "GRASS",
+      "typeTwo": "POISON",
+      "moves": [
+        {
+          "id": 0,
+          "name": "Tackle",
+          "power": 40,
+          "pp": 35,
+          "accuracy": 100,
+          "type": "NORMAL",
+          "moveType": "PHYSICAL"
+        }
+      ],
+      "shiny": false
+    },
+    {
+      "dex_number": "0002",
+      "name": "Ivysaur",
+      "dexEntry": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+      "hp": 60,
+      "atk": 62,
+      "def": 63,
+      "spatk": 80,
+      "spdef": 80,
+      "spd": 60,
+      "gender": "MALE",
+      "height": "1.0m",
+      "weight": "13.0kg",
+      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+      "shinySpriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/2.png",
+      "typeOne": "GRASS",
+      "typeTwo": "POISON",
+      "moves": [
+        {
+          "id": 0,
+          "name": "Tackle",
+          "power": 40,
+          "pp": 35,
+          "accuracy": 100,
+          "type": "NORMAL",
+          "moveType": "PHYSICAL"
+        }
+      ],
+      "shiny": false
+    }
+  ]
+}
+
+<> 2024-06-02T035601.200.json
+
+###
+
+PUT http://localhost:7070/api/protected/updatePokedexById/0
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyZWd1bGFyVXNlciIsInJvbGVzIjoiVVNFUiIsImlzcyI6Ik5pY2tsYXMgVy4iLCJleHAiOjE3MTcyOTM4NjIsImVtYWlsIjoicmVndWxhclVzZXJAZW1haWwuY29tIiwidXNlcm5hbWUiOiJyZWd1bGFyVXNlciJ9.YQGTDJ_p1MSxfn39J_8hpnlIA5WYimwt-ZxiBrVoQaQ
+Content-Type: application/json
+Content-Length: 1769
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "pokemon": [
+    {
+      "dex_number": "0001",
+      "name": "Bulbasaur",
+      "dexEntry": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON",
+      "hp": 45,
+      "atk": 49,
+      "def": 49,
+      "spatk": 65,
+      "spdef": 65,
+      "spd": 45,
+      "gender": "MALE",
+      "height": "0.7m",
+      "weight": "6.9kg",
+      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "shinySpriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png",
+      "typeOne": "GRASS",
+      "typeTwo": "POISON",
+      "moves": [
+        {
+          "id": 0,
+          "name": "Tackle",
+          "power": 40,
+          "pp": 35,
+          "accuracy": 100,
+          "type": "NORMAL",
+          "moveType": "PHYSICAL"
+        }
+      ],
+      "shiny": false
+    },
+    {
+      "dex_number": "0002",
+      "name": "Ivysaur",
+      "dexEntry": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+      "hp": 60,
+      "atk": 62,
+      "def": 63,
+      "spatk": 80,
+      "spdef": 80,
+      "spd": 60,
+      "gender": "MALE",
+      "height": "1.0m",
+      "weight": "13.0kg",
+      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+      "shinySpriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/2.png",
+      "typeOne": "GRASS",
+      "typeTwo": "POISON",
+      "moves": [
+        {
+          "id": 0,
+          "name": "Tackle",
+          "power": 40,
+          "pp": 35,
+          "accuracy": 100,
+          "type": "NORMAL",
+          "moveType": "PHYSICAL"
+        }
+      ],
+      "shiny": false
+    }
+  ]
+}
+
+<> 2024-06-02T035451.200.json
+
+###
+
+PUT http://localhost:7070/api/protected/updatePokedexById/0
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyZWd1bGFyVXNlciIsInJvbGVzIjoiVVNFUiIsImlzcyI6Ik5pY2tsYXMgVy4iLCJleHAiOjE3MTcyOTM4NjIsImVtYWlsIjoicmVndWxhclVzZXJAZW1haWwuY29tIiwidXNlcm5hbWUiOiJyZWd1bGFyVXNlciJ9.YQGTDJ_p1MSxfn39J_8hpnlIA5WYimwt-ZxiBrVoQaQ
+Content-Type: application/json
+Content-Length: 1769
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "pokemon": [
+    {
+      "dex_number": "0001",
+      "name": "Bulbasaur",
+      "dexEntry": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON",
+      "hp": 45,
+      "atk": 49,
+      "def": 49,
+      "spatk": 65,
+      "spdef": 65,
+      "spd": 45,
+      "gender": "MALE",
+      "height": "0.7m",
+      "weight": "6.9kg",
+      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "shinySpriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png",
+      "typeOne": "GRASS",
+      "typeTwo": "POISON",
+      "moves": [
+        {
+          "id": 0,
+          "name": "Tackle",
+          "power": 40,
+          "pp": 35,
+          "accuracy": 100,
+          "type": "NORMAL",
+          "moveType": "PHYSICAL"
+        }
+      ],
+      "shiny": false
+    },
+    {
+      "dex_number": "0002",
+      "name": "Ivysaur",
+      "dexEntry": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+      "hp": 60,
+      "atk": 62,
+      "def": 63,
+      "spatk": 80,
+      "spdef": 80,
+      "spd": 60,
+      "gender": "MALE",
+      "height": "1.0m",
+      "weight": "13.0kg",
+      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+      "shinySpriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/2.png",
+      "typeOne": "GRASS",
+      "typeTwo": "POISON",
+      "moves": [
+        {
+          "id": 0,
+          "name": "Tackle",
+          "power": 40,
+          "pp": 35,
+          "accuracy": 100,
+          "type": "NORMAL",
+          "moveType": "PHYSICAL"
+        }
+      ],
+      "shiny": false
+    }
+  ]
+}
+
+<> 2024-06-02T035404.500.json
+
+###
+
+PUT http://localhost:7070/api/protected/updatePokedexById/0
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyZWd1bGFyVXNlciIsInJvbGVzIjoiVVNFUiIsImlzcyI6Ik5pY2tsYXMgVy4iLCJleHAiOjE3MTcyOTM4NjIsImVtYWlsIjoicmVndWxhclVzZXJAZW1haWwuY29tIiwidXNlcm5hbWUiOiJyZWd1bGFyVXNlciJ9.YQGTDJ_p1MSxfn39J_8hpnlIA5WYimwt-ZxiBrVoQaQ
+Content-Type: application/json
+Content-Length: 1769
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "pokemon": [
+    {
+      "dex_number": "0001",
+      "name": "Bulbasaur",
+      "dexEntry": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON",
+      "hp": 45,
+      "atk": 49,
+      "def": 49,
+      "spatk": 65,
+      "spdef": 65,
+      "spd": 45,
+      "gender": "MALE",
+      "height": "0.7m",
+      "weight": "6.9kg",
+      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "shinySpriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png",
+      "typeOne": "GRASS",
+      "typeTwo": "POISON",
+      "moves": [
+        {
+          "id": 0,
+          "name": "Tackle",
+          "power": 40,
+          "pp": 35,
+          "accuracy": 100,
+          "type": "NORMAL",
+          "moveType": "PHYSICAL"
+        }
+      ],
+      "shiny": false
+    },
+    {
+      "dex_number": "0002",
+      "name": "Ivysaur",
+      "dexEntry": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+      "hp": 60,
+      "atk": 62,
+      "def": 63,
+      "spatk": 80,
+      "spdef": 80,
+      "spd": 60,
+      "gender": "MALE",
+      "height": "1.0m",
+      "weight": "13.0kg",
+      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+      "shinySpriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/2.png",
+      "typeOne": "GRASS",
+      "typeTwo": "POISON",
+      "moves": [
+        {
+          "id": 0,
+          "name": "Tackle",
+          "power": 40,
+          "pp": 35,
+          "accuracy": 100,
+          "type": "NORMAL",
+          "moveType": "PHYSICAL"
+        }
+      ],
+      "shiny": false
+    }
+  ]
+}
+
+<> 2024-06-02T035035.200.json
+
+###
+
+PUT http://localhost:7070/api/protected/updatePokedexById/0
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyZWd1bGFyVXNlciIsInJvbGVzIjoiVVNFUiIsImlzcyI6Ik5pY2tsYXMgVy4iLCJleHAiOjE3MTcyOTM4NjIsImVtYWlsIjoicmVndWxhclVzZXJAZW1haWwuY29tIiwidXNlcm5hbWUiOiJyZWd1bGFyVXNlciJ9.YQGTDJ_p1MSxfn39J_8hpnlIA5WYimwt-ZxiBrVoQaQ
+Content-Type: application/json
+Content-Length: 1769
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "pokemon": [
+    {
+      "dex_number": "0001",
+      "name": "Bulbasaur",
+      "dexEntry": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON",
+      "hp": 45,
+      "atk": 49,
+      "def": 49,
+      "spatk": 65,
+      "spdef": 65,
+      "spd": 45,
+      "gender": "MALE",
+      "height": "0.7m",
+      "weight": "6.9kg",
+      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "shinySpriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png",
+      "typeOne": "GRASS",
+      "typeTwo": "POISON",
+      "moves": [
+        {
+          "id": 0,
+          "name": "Tackle",
+          "power": 40,
+          "pp": 35,
+          "accuracy": 100,
+          "type": "NORMAL",
+          "moveType": "PHYSICAL"
+        }
+      ],
+      "shiny": false
+    },
+    {
+      "dex_number": "0002",
+      "name": "Ivysaur",
+      "dexEntry": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+      "hp": 60,
+      "atk": 62,
+      "def": 63,
+      "spatk": 80,
+      "spdef": 80,
+      "spd": 60,
+      "gender": "MALE",
+      "height": "1.0m",
+      "weight": "13.0kg",
+      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+      "shinySpriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/2.png",
+      "typeOne": "GRASS",
+      "typeTwo": "POISON",
+      "moves": [
+        {
+          "id": 0,
+          "name": "Tackle",
+          "power": 40,
+          "pp": 35,
+          "accuracy": 100,
+          "type": "NORMAL",
+          "moveType": "PHYSICAL"
+        }
+      ],
+      "shiny": false
+    }
+  ]
+}
+
+<> 2024-06-02T034043.500.json
+
+###
+
+PUT http://localhost:7070/api/protected/updatePokedexById/0
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyZWd1bGFyVXNlciIsInJvbGVzIjoiVVNFUiIsImlzcyI6Ik5pY2tsYXMgVy4iLCJleHAiOjE3MTcyOTM4NjIsImVtYWlsIjoicmVndWxhclVzZXJAZW1haWwuY29tIiwidXNlcm5hbWUiOiJyZWd1bGFyVXNlciJ9.YQGTDJ_p1MSxfn39J_8hpnlIA5WYimwt-ZxiBrVoQaQ
+Content-Type: application/json
+Content-Length: 1769
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "pokemon": [
+    {
+      "dex_number": "0001",
+      "name": "Bulbasaur",
+      "dexEntry": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON",
+      "hp": 45,
+      "atk": 49,
+      "def": 49,
+      "spatk": 65,
+      "spdef": 65,
+      "spd": 45,
+      "gender": "MALE",
+      "height": "0.7m",
+      "weight": "6.9kg",
+      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "shinySpriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png",
+      "typeOne": "GRASS",
+      "typeTwo": "POISON",
+      "moves": [
+        {
+          "id": 0,
+          "name": "Tackle",
+          "power": 40,
+          "pp": 35,
+          "accuracy": 100,
+          "type": "NORMAL",
+          "moveType": "PHYSICAL"
+        }
+      ],
+      "shiny": false
+    },
+    {
+      "dex_number": "0002",
+      "name": "Ivysaur",
+      "dexEntry": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+      "hp": 60,
+      "atk": 62,
+      "def": 63,
+      "spatk": 80,
+      "spdef": 80,
+      "spd": 60,
+      "gender": "MALE",
+      "height": "1.0m",
+      "weight": "13.0kg",
+      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+      "shinySpriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/2.png",
+      "typeOne": "GRASS",
+      "typeTwo": "POISON",
+      "moves": [
+        {
+          "id": 0,
+          "name": "Tackle",
+          "power": 40,
+          "pp": 35,
+          "accuracy": 100,
+          "type": "NORMAL",
+          "moveType": "PHYSICAL"
+        }
+      ],
+      "shiny": false
+    }
+  ]
+}
+
+<> 2024-06-02T033435.500.json
+
+###
+
+POST http://localhost:7070/api/auth/login
+Content-Length: 47
+Content-Type: */*; charset=UTF-8
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.10)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+"username":"regularUser",
+"password":"1234"
+}
+
+<> 2024-06-02T033422.200.json
+
+###
+
 PUT http://localhost:7070/api/protected/updatePokedexById/0
 Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJyZWd1bGFyVXNlciIsInJvbGVzIjoiVVNFUiIsImlzcyI6Ik5pY2tsYXMgVy4iLCJleHAiOjE3MTcyOTE0MDYsImVtYWlsIjoicmVndWxhclVzZXJAZW1haWwuY29tIiwidXNlcm5hbWUiOiJyZWd1bGFyVXNlciJ9.XXe7h4kmTqhvO2SQ-00sZVNUy4cCAfrpcs7p4DRaXxM
 Content-Type: application/json

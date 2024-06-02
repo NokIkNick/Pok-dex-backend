@@ -33,7 +33,7 @@ public class PokedexDAO extends DAO<Pokedex, Integer>{
         try(var em = emf.createEntityManager()){
             em.getTransaction().begin();
             Pokedex result;
-            TypedQuery<Pokedex> query = em.createQuery("SELECT p FROM Pokedex p WHERE p.user.id = :id", Pokedex.class);
+            TypedQuery<Pokedex> query = em.createQuery("SELECT p FROM Pokedex p WHERE p.user.id = :id ", Pokedex.class);
             query.setParameter("id", id);
             result = query.getSingleResult();
             return result;

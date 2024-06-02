@@ -1,0 +1,6 @@
+{
+  "status": 500,
+  "message": "Error accessing field [private java.lang.String org.example.persistence.Pokemon.dex_number] by reflection for persistent property [org.example.persistence.Pokemon#dex_number] : org.example.dtos.PokemonDTO@3a51f750",
+  "timestamp": "2024-06-02T03:40:43.530173600",
+  "IP:": "127.0.0.1"
+}

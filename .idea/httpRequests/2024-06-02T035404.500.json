@@ -1,0 +1,6 @@
+{
+  "status": 500,
+  "message": "Multiple representations of the same entity [org.example.persistence.Move#0] are being merged. Detached: [org.example.persistence.Move@665803ec]; Detached: [org.example.persistence.Move@3fc327]",
+  "timestamp": "2024-06-02T03:54:04.808441700",
+  "IP:": "127.0.0.1"
+}

@@ -1,0 +1,67 @@
+{
+  "id": 0,
+  "pokemon": [
+    {
+      "dex_number": "0002",
+      "name": "Ivysaur",
+      "dexEntry": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+      "hp": 60,
+      "atk": 62,
+      "def": 63,
+      "spatk": 80,
+      "spdef": 80,
+      "spd": 60,
+      "gender": "MALE",
+      "height": "1.0m",
+      "weight": "13.0kg",
+      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+      "shinySpriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/2.png",
+      "typeOne": "GRASS",
+      "typeTwo": "POISON",
+      "moves": [
+        {
+          "id": 0,
+          "name": "Tackle",
+          "description": "A full-body charge attack.",
+          "power": 40,
+          "pp": 35,
+          "accuracy": 100,
+          "type": "NORMAL",
+          "moveType": "PHYSICAL"
+        }
+      ],
+      "shiny": false
+    },
+    {
+      "dex_number": "0001",
+      "name": "Bulbasaur",
+      "dexEntry": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON",
+      "hp": 45,
+      "atk": 49,
+      "def": 49,
+      "spatk": 65,
+      "spdef": 65,
+      "spd": 45,
+      "gender": "MALE",
+      "height": "0.7m",
+      "weight": "6.9kg",
+      "spriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "shinySpriteUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png",
+      "typeOne": "GRASS",
+      "typeTwo": "POISON",
+      "moves": [
+        {
+          "id": 0,
+          "name": "Tackle",
+          "description": "A full-body charge attack.",
+          "power": 40,
+          "pp": 35,
+          "accuracy": 100,
+          "type": "NORMAL",
+          "moveType": "PHYSICAL"
+        }
+      ],
+      "shiny": false
+    }
+  ]
+}

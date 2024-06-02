@@ -16,5 +16,7 @@ public class Main {
                 .checkSecurityRoles(isTesting)
                 .configureCors();
         //Populator.populate(isTesting);
+
+
     }
 }

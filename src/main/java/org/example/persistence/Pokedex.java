@@ -8,6 +8,7 @@ import lombok.Setter;
 import org.example.model.User;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 @Entity
@@ -25,6 +26,6 @@ public class Pokedex {
     @ManyToMany(fetch = FetchType.EAGER,  cascade = CascadeType.MERGE)
     @JoinTable(name = "pokemon_in_dex", joinColumns = @JoinColumn(name = "id"),
     inverseJoinColumns = @JoinColumn(name = "dex_number"))
-    private Set<Pokemon> pokemon = new HashSet<>();
+    private Set<Pokemon> pokemon = new LinkedHashSet<>();
 
 }
